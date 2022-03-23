@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Loading, please wait...</p>
+    <script>
+        let n = Math.floor(Math.random() * 1000);
+            console.log(n);
+
+        while (true) {          
+            let userNumber = prompt('Введите число от 0 до 1000:');
+            console.log(userNumber);
+
+            if (isNaN(userNumber)) {
+                alert('Это не число!');
+            }
+
+            else {
+
+                if (userNumber > n) {
+                    alert('меньше...');
+                }
+
+                else if (userNumber < n) {
+                    alert('больше...');
+                }
+                
+                else {
+                    alert('Угадал!!!');
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
